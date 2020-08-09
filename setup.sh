@@ -4,7 +4,6 @@
 git submodule init
 git submodule update
 ln -srf config_files/.gitconfig ~/
-ln -srf config_files/.gitignore ~/
 ln -srf config_files/.gitignore_global ~/
 git config --global credential.helper store
 

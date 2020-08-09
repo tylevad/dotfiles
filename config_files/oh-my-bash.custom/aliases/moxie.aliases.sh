@@ -18,6 +18,7 @@ alias vi='vim'
 alias t='tmux'
 alias ta='tmux attach'
 alias tn='tmux new -s'
+alias ts='tmuxinator start'
 alias rn='ranger'
 
 # ruby and rails
@@ -28,6 +29,6 @@ alias p='pry'
 # shortcuts
 alias c='clear'
 alias x='exit'
-alias hist='history | grep' # history search
-alias gps='ps -e | grep'
+alias hist='history | rg' # history search
+alias gps='ps -e | rg'
 
