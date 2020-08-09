@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 # bash
-ln -srf config_files/oh-my-bash ~/
+if [ -d ~/.oh-my-bash ]; then
+  mv ~/.oh-my-bash ~/.oh-my-bash.$(date +%s)
+fi
+ln -srf config_files/oh-my-bash ~/.oh-my-bash
 ln -srf config_files/.bash_logout ~/
 ln -srf config_files/.bash_profile ~/
 ln -srf config_files/.bashrc ~/
