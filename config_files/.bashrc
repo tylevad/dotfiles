@@ -41,7 +41,7 @@ ENABLE_CORRECTION="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $OSH/custom?
-# OSH_CUSTOM=/path/to/new-custom-folder
+OSH_CUSTOM=$HOME/.oh-my-bash.custom
 
 # Which completions would you like to load? (completions can be found in ~/.oh-my-bash/completions/*)
 # Custom completions may be added to ~/.oh-my-bash/custom/completions/
