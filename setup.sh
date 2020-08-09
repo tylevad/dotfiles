@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # bash
-ln -srf config_files/.oh-my-bash ~/
+ln -srf config_files/oh-my-bash ~/
 ln -srf config_files/.bash_logout ~/
 ln -srf config_files/.bash_profile ~/
 ln -srf config_files/.bashrc ~/
