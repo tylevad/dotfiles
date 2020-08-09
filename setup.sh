@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# git
+git submodule init
+git submodule update
+ln -srf config_files/.gitconfig ~/
+ln -srf config_files/.gitignore ~/
+ln -srf config_files/.gitignore_global ~/
+git config --global credential.helper store
+
 # bash
 if [ -d ~/.oh-my-bash ]; then
   mv ~/.oh-my-bash ~/.oh-my-bash.$(date +%s)
@@ -41,12 +49,6 @@ if [ -d ~/.config/ranger ]; then rm -rf ~/.config/ranger; fi
 ln -srf config_files/ranger ~/.config/
 if [ -d ~/.config/bottom ]; then rm -rf ~/.config/bottom; fi
 ln -srf config_files/bottom ~/.config/
-
-# git
-ln -srf config_files/.gitconfig ~/
-ln -srf config_files/.gitignore ~/
-ln -srf config_files/.gitignore_global ~/
-git config --global credential.helper store
 
 # scripts and binaries
 if [ -d ~/Dropbox/bin ]; then
