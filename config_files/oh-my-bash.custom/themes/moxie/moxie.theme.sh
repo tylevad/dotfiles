@@ -7,7 +7,7 @@ function cmd_failed() {
   then
     echo "${red}"
   else
-    echo "${cyan}"
+    echo "${green}"
   fi
 }
 
@@ -25,7 +25,7 @@ SCM_THEME_PROMPT_PREFIX="${gray}@${purple}"
 SCM_THEME_PROMPT_SUFFIX="${reset_color}"
 
 # ruby version display
-RBENV_THEME_PROMPT_PREFIX="${gray}(${yellow}"
+RBENV_THEME_PROMPT_PREFIX="${gray}(${light_gray}"
 RBENV_THEME_PROMPT_SUFFIX="${gray})${reset_color}"
 
 safe_append_prompt_command prompt_command
