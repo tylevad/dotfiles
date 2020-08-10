@@ -7,10 +7,12 @@
   pl = pull --rebase
   lg = log --oneline
   bl = branch --list
+  df = diff
   dh = diff HEAD
   aa = add -A
-  s = stash
+  st = stash
   sp = stash pop
+  ss = status
   rh = reset --hard
   rs = reset --soft
 [core]

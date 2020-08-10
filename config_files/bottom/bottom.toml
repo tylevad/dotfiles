@@ -18,7 +18,7 @@ hide_avg_cpu = false # this is inverted for some reason
 #rate = 1000
 
 # Whether to put the CPU legend to the left.
-left_legend = true
+# left_legend = true
 
 # Whether to set CPU% on a process to be based on the total CPU or just current usage.
 #current_usage = false
@@ -79,13 +79,13 @@ widget_title_color="Green"
 avg_cpu_color="Blue"
 
 # Represents the colour the core will use in the CPU legend and graph.
-cpu_core_colors=["Yellow", "Red", "Green", "Blue", "Magenta", "Yellow", "Red", "Green", "Blue", "Magenta", "Yellow", "Red", "Green", "Blue", "Magenta"]
+cpu_core_colors=["Yellow", "Red", "Green", "Blue", "Magenta", "Cyan", "Yellow", "Red", "Green", "Blue", "Magenta", "Cyan"]
 
 # Represents the colour RAM will use in the memory legend and graph.
-#ram_color="Magenta"
+ram_color="Magenta"
 
 # Represents the colour SWAP will use in the memory legend and graph.
-#swap_color="Yellow"
+swap_color="Yellow"
 
 # Represents the colour rx will use in the network legend and graph.
 rx_color="Green"
@@ -94,22 +94,22 @@ rx_color="Green"
 tx_color="Red"
 
 # Represents the colour of the border of unselected widgets.
-border_color="Blue"
+border_color="Black"
 
 # Represents the colour of the border of selected widgets.
-highlighted_border_color="Green"
+highlighted_border_color="Blue"
 
 # Represents the colour of most text.
-#text_color="Gray"
+text_color="Gray"
 
 # Represents the colour of text that is selected.
-#selected_text_color="Black"
+selected_text_color="Green"
 
 # Represents the background colour of text that is selected.
-#selected_bg_color="Blue"
+selected_bg_color="Reset"
 
 # Represents the colour of the lines and text of the graph.
-#graph_color="Gray"
+graph_color="DarkGray"
 
 # Represents the colours of the battery based on charge
 #battery_colors = ["red", "yellow", "yellow", "green", "green", "green"]
