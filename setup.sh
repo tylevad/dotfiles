@@ -31,6 +31,7 @@ ln -srf config_files/.psqlrc ~/
 ln -srf config_files/.gemrc ~/
 ln -srf config_files/.inputrc ~/
 ln -srf config_files/.tmux.conf ~/
+ln -srf config_files/redshift.conf ~/.config/
 
 # vim
 shopt -s dotglob
