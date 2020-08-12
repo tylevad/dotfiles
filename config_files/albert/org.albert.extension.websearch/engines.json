@@ -1,0 +1,62 @@
+[
+    {
+        "iconPath": "/home/ty/.config/albert/org.albert.extension.websearch/{51a6411f-5199-43b7-bc31-41f4e62eae38}.",
+        "name": "Google",
+        "trigger": "g ",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "iconPath": "/home/ty/.config/albert/org.albert.extension.websearch/{62236556-aff0-4e6a-b760-f72816106d5f}.png",
+        "name": "Dictionary.com",
+        "trigger": "d ",
+        "url": "https://www.dictionary.com/browse/%s?s=t"
+    },
+    {
+        "iconPath": "/home/ty/.config/albert/org.albert.extension.websearch/{577b514d-e48b-4fde-a967-0f17296d0303}.png",
+        "name": "Thesaurus.com",
+        "trigger": "t ",
+        "url": "https://www.thesaurus.com/browse/%s?s=t"
+    },
+    {
+        "iconPath": "/home/ty/.config/albert/org.albert.extension.websearch/{133a494f-1e42-42dc-87a7-0adc3aae7ac5}.png",
+        "name": "Wikipedia",
+        "trigger": "w ",
+        "url": "https://en.wikipedia.org/wiki/%s"
+    },
+    {
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": ":amazon",
+        "name": "Amazon",
+        "trigger": "ama ",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "iconPath": ":ebay",
+        "name": "Ebay",
+        "trigger": "eb ",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": ":duckduckgo",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    }
+]
