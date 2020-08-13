@@ -29,6 +29,7 @@ alias p='pry'
 # shortcuts
 alias c='clear'
 alias x='exit'
+alias q='exit'
 alias hist='history | rg' # history search
 alias gps='ps -e | rg'
 

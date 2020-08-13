@@ -30,7 +30,6 @@ ln -srf config_files/.psqlrc ~/
 # misc
 ln -srf config_files/.gemrc ~/
 ln -srf config_files/.inputrc ~/
-ln -srf config_files/.tmux.conf ~/
 ln -srf config_files/redshift.conf ~/.config/
 
 # vim
@@ -101,3 +100,10 @@ if [ -e $(which tilda 2>/dev/null) ]; then
   cp -rf config_files/tilda ~/.config/
 fi
 
+# tmux
+ln -srf config_files/.tmux.conf ~/
+ln -srf config_files/tmuxinator ~/.config/
+tmuxinator copy main $HOSTNAME
+tmuxinator edit $HOSTNAME
+
+dconf load / < config_files/moxie.dconf

@@ -1,0 +1,21 @@
+# ~/.config/tmuxinator/note.yml
+
+name: note
+root: ~/
+
+windows:
+  - dash:
+      layout: 64c2,159x72,0,0[159x23,0,0,52,159x23,0,24,83,159x24,0,48,56]
+      panes:
+        - c
+        - ranger
+        - btm
+  - work:
+      root: ~/.notes/work
+      panes:
+        - vim
+  - note:
+      root: ~/.notes
+      panes:
+        - vim
+  - dots: vim
