@@ -1,0 +1,26 @@
+# ~/.config/tmuxinator/epona.yml
+
+name: epona
+root: ~/
+
+windows:
+  - skudb:
+      layout: 5676,239x55,0,0[239x50,0,0{119x50,0,0,0,119x50,120,0[119x16,120,0,2,119x16,120,17,3,119x16,120,34,4]},239x4,0,51{78x4,0,51,5,78x4,79,51,6,81x4,158,51,7}]
+      root: ~/Work/skudb-gamma
+      panes:
+        - vim
+        - # bash
+        - # bash
+        - ranger
+        - heroku local
+        - npm run webpack -- --watch
+        - cd ~/Work/db_dumps; c
+  - rust:
+      layout: 5436,319x74,0,0{159x74,0,0,6,159x74,160,0[159x18,160,0,7,159x18,160,19,10,159x18,160,38,8,159x17,160,57,9]}
+      root: ~/Work/rust
+      panes:
+        - vim
+        - # bash
+        - # bash
+        - ranger
+        - cd ~/Work/skudb-gamma; c
