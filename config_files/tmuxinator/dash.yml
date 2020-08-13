@@ -1,6 +1,6 @@
-# ~/.config/tmuxinator/note.yml
+# ~/.config/tmuxinator/dash.yml
 
-name: note
+name: dash
 root: ~/
 
 windows:
