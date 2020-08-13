@@ -110,10 +110,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 | APT             | Debian 9+/Ubuntu 19.10+ | `sudo apt-get install fzf`         |
 | Conda           |                         | `conda install -c conda-forge fzf` |
 | DNF             | Fedora                  | `sudo dnf install fzf`             |
-| Nix             | NixOS                   | `nix-env -iA nixpkgs.fzf`          |
+| Nix             | NixOS, etc.             | `nix-env -iA nixpkgs.fzf`          |
 | Pacman          | Arch Linux              | `sudo pacman -S fzf`               |
 | pkg             | FreeBSD                 | `pkg install fzf`                  |
 | pkg_add         | OpenBSD                 | `pkg_add fzf`                      |
+| XBPS            | Void Linux              | `sudo xbps-install -S fzf`         |
 | Zypper          | openSUSE                | `sudo zypper install fzf`          |
 
 Shell extensions (key bindings and fuzzy auto-completion) and Vim/Neovim
@@ -529,9 +530,10 @@ See *KEY BINDINGS* section of the man page for details.
 
 ### Preview window
 
-When `--preview` option is set, fzf automatically starts an external process with
-the current line as the argument and shows the result in the split window. Your
-`$SHELL` is used to execute the command with `$SHELL -c COMMAND`.
+When the `--preview` option is set, fzf automatically starts an external process 
+with the current line as the argument and shows the result in the split window. 
+Your `$SHELL` is used to execute the command with `$SHELL -c COMMAND`. 
+The window can be scrolled using the mouse or custom key bindings.
 
 ```bash
 # {} is replaced to the single-quoted string of the focused line
@@ -547,13 +549,12 @@ fzf --preview 'head -100 {}'
 ```
 
 Preview window supports ANSI colors, so you can use any program that
-syntax-highlights the content of a file.
-
-- Bat: https://github.com/sharkdp/bat
-- Highlight: http://www.andre-simon.de/doku/highlight/en/highlight.php
+syntax-highlights the content of a file, such as 
+[Bat](https://github.com/sharkdp/bat) or
+[Highlight](http://www.andre-simon.de/doku/highlight/en/highlight.php):
 
 ```bash
-fzf --preview 'bat --style=numbers --color=always {} | head -500'
+fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'
 ```
 
 You can customize the size, position, and border of the preview window using
@@ -582,7 +583,7 @@ not a good idea to add `--preview` option to your `$FZF_DEFAULT_OPTS`**.
 # *********************
 # ** DO NOT DO THIS! **
 # *********************
-export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always {} | head -500"'
+export FZF_DEFAULT_OPTS='--preview "bat --style=numbers --color=always --line-range :500 {}"'
 
 # bat doesn't work with any input other than the list of files
 ps -ef | fzf

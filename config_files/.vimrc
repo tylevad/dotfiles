@@ -24,6 +24,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'raimondi/delimitmate'
 " hex color code colorizer
 Plug 'lilydjwg/colorizer'
+" rg in vim
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 " Basic settings
@@ -71,8 +73,11 @@ set hlsearch
 set incsearch
 " clear search
 nnoremap <Leader>c :noh<CR>
+
 " ripgrep search word under cursor
 nnoremap <Leader>rg :Rg<CR>
+let g:rg_highlight = 'true'
+let g:rg_derive_root = 'true'
 
 " I hate my non-physical escape key...
 inoremap jj <Esc>`^

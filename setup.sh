@@ -72,9 +72,32 @@ if [ -d ~/Dropbox/config ]; then
   chmod 600 ~/.ssh/*.pem
   chmod 700 ~/.ssh
   ln -srf ~/Dropbox/config/ssh/config ~/.ssh/
+
+  # gpg
+  if [ -d ~/.gpupg ]; then
+    mv ~/.gnupg ~/.gnupg.$(date +%s)
+  fi
+  ln -srf ~/Dropbox/config/.gnupg ~/
+  chmod 700 ~/.gnupg
+  chmod 600 ~/.gnupg/random_seed
+  chmod 600 ~/.gnupg/trustdb.gpg
+  chmod 700 ~/.gnupg/openpgp-revocs.d
+  chmod 600 ~/.gnupg/openpgp-revocs.d/*
+  chmod 700 ~/.gnupg/private-keys-v1.d
+  chmod 600 ~/.gnupg/private-keys-v1.d/*
+
+  # pass
+  if [ -d ~/.password-store ]; then
+    mv ~/.password-store ~/.password-store.$(date +%s)
+  fi
+  ln -srf ~/Dropbox/config/.password-store ~/
+  chmod 700 ~/.password-store/*
+  chmod 600 ~/.password-store/.gpg-id
+  chmod 600 ~/.password-store/*/*.gpg
 fi
 
 # tilda
 if [ -e $(which tilda 2>/dev/null) ]; then
   cp -rf config_files/tilda ~/.config/
 fi
+

@@ -138,7 +138,7 @@ graph_color="DarkGray"
   [[row.child]]
     type="net"
 [[row]]
-  ratio=55
+  ratio=50
   [[row.child]]
     ratio=5
     type="proc"
